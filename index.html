@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Pet-Shop</title>
+    <link rel="icon" href="cat.jpg" type="image/x-icon">
+</head>
+
+<body>  
+    <main>
+        <header class="header flex container">
+            <div class="logo">
+                <img src="img/logoheader.jpg" alt="logo" class="logo-img">
+            </div>
+            <div class="header-btn flex">
+                <button class="sign-in-btn">Sign in</button>
+            </div>
+
+        </header>
+
+
+        <section class="categories container-mini flex">
+
+            <div class="categories-left flex">
+                <div class="pets-heading flex">
+                    <div class="pets-caption">
+                        <h3>Pet-list</h3>
+                    </div>
+                    <div class="button-create flex">
+                        <button class="create-btn">Create new sale</button>
+                    </div>
+                </div>
+
+
+                <div class="pets flex">
+                    <table class="table-pets ">
+                        <tr>
+                            <th>N:</th>
+                            <th>Type</th>
+                            <th>Count</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                        <!-- <tr>
+                                <td>1</td>
+                                <td>Cat</td>
+                                <td>20</td>
+                                <td>80₼</td>
+                                <td>
+                                    <button class="edit-btn">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M21.1213 2.70705C19.9497 1.53548 18.0503 1.53547 16.8787 2.70705L15.1989 4.38685L7.29289 12.2928C7.16473 12.421 7.07382 12.5816 7.02986 12.7574L6.02986 16.7574C5.94466 17.0982 6.04451 17.4587 6.29289 17.707C6.54127 17.9554 6.90176 18.0553 7.24254 17.9701L11.2425 16.9701C11.4184 16.9261 11.5789 16.8352 11.7071 16.707L19.5556 8.85857L21.2929 7.12126C22.4645 5.94969 22.4645 4.05019 21.2929 2.87862L21.1213 2.70705ZM18.2929 4.12126C18.6834 3.73074 19.3166 3.73074 19.7071 4.12126L19.8787 4.29283C20.2692 4.68336 20.2692 5.31653 19.8787 5.70705L18.8622 6.72357L17.3068 5.10738L18.2929 4.12126ZM15.8923 6.52185L17.4477 8.13804L10.4888 15.097L8.37437 15.6256L8.90296 13.5112L15.8923 6.52185ZM4 7.99994C4 7.44766 4.44772 6.99994 5 6.99994H10C10.5523 6.99994 11 6.55223 11 5.99994C11 5.44766 10.5523 4.99994 10 4.99994H5C3.34315 4.99994 2 6.34309 2 7.99994V18.9999C2 20.6568 3.34315 21.9999 5 21.9999H16C17.6569 21.9999 19 20.6568 19 18.9999V13.9999C19 13.4477 18.5523 12.9999 18 12.9999C17.4477 12.9999 17 13.4477 17 13.9999V18.9999C17 19.5522 16.5523 19.9999 16 19.9999H5C4.44772 19.9999 4 19.5522 4 18.9999V7.99994Z"
+                                                fill="blue" />
+                                        </svg>
+                                    </button>
+                                    <button class="delete-btn">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="red"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12V17" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M14 12V17" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M4 7H20" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Dog</td>
+                                <td>40</td>
+                                <td>330₼</td>
+                                <td>
+                                    <button class="edit-btn">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M21.1213 2.70705C19.9497 1.53548 18.0503 1.53547 16.8787 2.70705L15.1989 4.38685L7.29289 12.2928C7.16473 12.421 7.07382 12.5816 7.02986 12.7574L6.02986 16.7574C5.94466 17.0982 6.04451 17.4587 6.29289 17.707C6.54127 17.9554 6.90176 18.0553 7.24254 17.9701L11.2425 16.9701C11.4184 16.9261 11.5789 16.8352 11.7071 16.707L19.5556 8.85857L21.2929 7.12126C22.4645 5.94969 22.4645 4.05019 21.2929 2.87862L21.1213 2.70705ZM18.2929 4.12126C18.6834 3.73074 19.3166 3.73074 19.7071 4.12126L19.8787 4.29283C20.2692 4.68336 20.2692 5.31653 19.8787 5.70705L18.8622 6.72357L17.3068 5.10738L18.2929 4.12126ZM15.8923 6.52185L17.4477 8.13804L10.4888 15.097L8.37437 15.6256L8.90296 13.5112L15.8923 6.52185ZM4 7.99994C4 7.44766 4.44772 6.99994 5 6.99994H10C10.5523 6.99994 11 6.55223 11 5.99994C11 5.44766 10.5523 4.99994 10 4.99994H5C3.34315 4.99994 2 6.34309 2 7.99994V18.9999C2 20.6568 3.34315 21.9999 5 21.9999H16C17.6569 21.9999 19 20.6568 19 18.9999V13.9999C19 13.4477 18.5523 12.9999 18 12.9999C17.4477 12.9999 17 13.4477 17 13.9999V18.9999C17 19.5522 16.5523 19.9999 16 19.9999H5C4.44772 19.9999 4 19.5522 4 18.9999V7.99994Z"
+                                                fill="blue" />
+                                        </svg>
+                                    </button>
+                                    <button class="delete-btn">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="red"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12V17" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M14 12V17" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M4 7H20" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Parrot</td>
+                                <td>100</td>
+                                <td>1500₼</td>
+                                <td>
+                                    <button class="edit-btn">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M21.1213 2.70705C19.9497 1.53548 18.0503 1.53547 16.8787 2.70705L15.1989 4.38685L7.29289 12.2928C7.16473 12.421 7.07382 12.5816 7.02986 12.7574L6.02986 16.7574C5.94466 17.0982 6.04451 17.4587 6.29289 17.707C6.54127 17.9554 6.90176 18.0553 7.24254 17.9701L11.2425 16.9701C11.4184 16.9261 11.5789 16.8352 11.7071 16.707L19.5556 8.85857L21.2929 7.12126C22.4645 5.94969 22.4645 4.05019 21.2929 2.87862L21.1213 2.70705ZM18.2929 4.12126C18.6834 3.73074 19.3166 3.73074 19.7071 4.12126L19.8787 4.29283C20.2692 4.68336 20.2692 5.31653 19.8787 5.70705L18.8622 6.72357L17.3068 5.10738L18.2929 4.12126ZM15.8923 6.52185L17.4477 8.13804L10.4888 15.097L8.37437 15.6256L8.90296 13.5112L15.8923 6.52185ZM4 7.99994C4 7.44766 4.44772 6.99994 5 6.99994H10C10.5523 6.99994 11 6.55223 11 5.99994C11 5.44766 10.5523 4.99994 10 4.99994H5C3.34315 4.99994 2 6.34309 2 7.99994V18.9999C2 20.6568 3.34315 21.9999 5 21.9999H16C17.6569 21.9999 19 20.6568 19 18.9999V13.9999C19 13.4477 18.5523 12.9999 18 12.9999C17.4477 12.9999 17 13.4477 17 13.9999V18.9999C17 19.5522 16.5523 19.9999 16 19.9999H5C4.44772 19.9999 4 19.5522 4 18.9999V7.99994Z"
+                                                fill="blue" />
+                                        </svg>
+                                    </button>
+                                    <button class="delete-btn">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="red"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12V17" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M14 12V17" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M4 7H20" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Cat</td>
+                                <td>20</td>
+                                <td>80₼</td>
+                                <td>
+                                    <button class="edit-btn">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M21.1213 2.70705C19.9497 1.53548 18.0503 1.53547 16.8787 2.70705L15.1989 4.38685L7.29289 12.2928C7.16473 12.421 7.07382 12.5816 7.02986 12.7574L6.02986 16.7574C5.94466 17.0982 6.04451 17.4587 6.29289 17.707C6.54127 17.9554 6.90176 18.0553 7.24254 17.9701L11.2425 16.9701C11.4184 16.9261 11.5789 16.8352 11.7071 16.707L19.5556 8.85857L21.2929 7.12126C22.4645 5.94969 22.4645 4.05019 21.2929 2.87862L21.1213 2.70705ZM18.2929 4.12126C18.6834 3.73074 19.3166 3.73074 19.7071 4.12126L19.8787 4.29283C20.2692 4.68336 20.2692 5.31653 19.8787 5.70705L18.8622 6.72357L17.3068 5.10738L18.2929 4.12126ZM15.8923 6.52185L17.4477 8.13804L10.4888 15.097L8.37437 15.6256L8.90296 13.5112L15.8923 6.52185ZM4 7.99994C4 7.44766 4.44772 6.99994 5 6.99994H10C10.5523 6.99994 11 6.55223 11 5.99994C11 5.44766 10.5523 4.99994 10 4.99994H5C3.34315 4.99994 2 6.34309 2 7.99994V18.9999C2 20.6568 3.34315 21.9999 5 21.9999H16C17.6569 21.9999 19 20.6568 19 18.9999V13.9999C19 13.4477 18.5523 12.9999 18 12.9999C17.4477 12.9999 17 13.4477 17 13.9999V18.9999C17 19.5522 16.5523 19.9999 16 19.9999H5C4.44772 19.9999 4 19.5522 4 18.9999V7.99994Z"
+                                                fill="blue" />
+                                        </svg>
+                                    </button>
+                                    <button class="delete-btn">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="red"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12V17" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M14 12V17" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M4 7H20" stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                stroke="red" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr> -->
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="categories-right flex">
+
+                <div class="today flex">
+                    <table class="today-sales">
+                        <tr>
+                            <th>Stock Price</th>
+                            <th>Daily Sales</th>
+                        </tr>
+                        <tr>
+                            <td id="stock-price">0</td>
+                            <td id="daily-sales">0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="customers container-mini flex">
+            <div class="customer-heading flex">
+                <div class="customers-caption">
+                    <h3>Customer-list</h3>
+                </div>
+                <div class="customer-button">
+                    <button class="customer-btn">Create new Customer</button>
+                </div>
+            </div>
+            <div class="customers-list flex">
+                <table class="customers-table">
+                    <tr>
+                        <th>N:</th>
+                        <th>Fullname</th>
+                        <th>+Phone</th>
+                        <th>Total <br> Count</th>
+                        <th>Total <br> Amount</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="order-list container-mini flex">
+            <div class="order-list-heading  flex">
+                <div class="order-list-heading-caption">
+                    <h3>Order-list</h3>
+                </div>
+                <div class="order-list-button">
+                    <button class="list-btn">Create New List</button>
+                </div>
+            </div>
+            <div class="order-list-table flex">
+                <table class="list-table">
+                    <tr>
+                        <th>N:</th>
+                        <th>Fullname</th>
+                        <th>Phone</th>
+                        <th>Pet Type</th>
+                        <th>Count</th>
+                        <th>Price</th>
+                        <th>Total <br> Price</th>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+
+
+        <footer class="footer container">
+            <p>© Copyright 2023 by Jafar Muradov. Feel free to use this project for your own purposes. This does NOT
+                apply if you plan to produce your own course or tutorials based on this project.</p>
+        </footer>
+
+
+        <div class="modal popup-modal">
+            <div class="news-modal popup-news-modal">
+                <div class="modal-input popup-modal-input">
+                    <form class="news-inputs popup-news-inputs">
+                        <input type="text" placeholder="pet type" class="input popup-input" id="type-input">
+                        <input type="number" placeholder="pet count" class="input popup-input" id="count-input">
+                        <input type="number" placeholder="pet price" class="input popup-input" id="price-input">
+                    </form>
+                    <div class="close-modal popup-close-modal">
+                        <span id="close" class="popup-close">&times;</span>
+                    </div>
+                </div>
+
+                <div class="modal-button ">
+                    <button class="modal-btn popup-modal-btn">Add</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal-edit popup-modal">
+            <div class="news-modal-edit popup-news-modal">
+                <div class="modal-input-edit popup-modal-input">
+                    <form class="news-inputs-edit popup-news-inputs">
+                        <input type="text" placeholder="pet type" class="input-edit popup-input" id="type-edit">
+                        <input type="number" placeholder="pet count" class="input-edit popup-input" id="count-edit">
+                        <input type="number" placeholder="pet price" class="input-edit popup-input" id="price-edit">
+                    </form>
+                    <div class="close-modal-edit popup-close-modal">
+                        <span id="close-edit" class="popup-close">&times;</span>
+                    </div>
+                </div>
+
+                <div class="modal-button-edit">
+                    <button class="save-btn popup-modal-btn">Save</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="order-modal popup-modal flex">
+            <div class="order-pet popup-news-modal">
+                <div class="order-customer flex">
+                    <div class="select-orders flex">
+
+                        <select name="pets" id="pet-select" class="select-order">
+                            <option value="">--Please choose an pet--</option>
+                            <!-- <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="hamster">Hamster</option>
+                                <option value="parrot">Parrot</option>
+                                <option value="rabbit">Rabbit</option>
+                                <option value="goldfish">Goldfish</option> -->
+                        </select>
+                        <select name="fullname" id="fullname-select" class="select-order">
+                            <option value="">--Please choose an name--</option>
+                            <!-- <option value="name">Name</option> -->
+                        </select>
+                        <!-- <select name="surname" id="surname-select" class="select-order">
+                            <option value="">--Please choose an surname--</option>
+                            <option value="name">Surname</option>
+                        </select> -->
+                        <select name="phone" id="phone-select" class="select-order">
+                            <option value="">--Please choose an phone--</option>
+                            <!-- <option value="name">Phone</option> -->
+                        </select>
+
+                    </div>
+                    <div class="popup-close-modal">
+                        <span id="close-order" class="close-order-modal popup-close">&times;</span>
+                    </div>
+
+                </div>
+                <div class="inputs-order flex">
+
+                    <form class="inputs-form flex">
+                        <input type="number" name="count-user" id="count-user" placeholder="How many pets do you want?"
+                            class="popup-input">
+                        <input type="number" name="price-pet" id="price-pet" placeholder="Pet Price"
+                            class="popup-input">
+                    </form>
+                </div>
+                <div class="submit-button">
+                    <button class="submit-btn">Submit</button>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+
+        <div class="customer-modal popup-modal">
+            <div class="customer-popup popup-news-modal">
+                <div class="customer-input popup-modal-input">
+                    <form class="customer-inputs popup-news-inputs">
+                        <input type="text" placeholder="fullname" class="input popup-input" id="fullname-customer">
+                        <input type="number" placeholder="phone" class="input popup-input" id="phone-customer">
+                    </form>
+                    <div class="close-modal-customer popup-close-modal">
+                        <span id="close" class="popup-close">&times;</span>
+                    </div>
+                </div>
+
+                <div class="modal-button ">
+                    <button class="customer-add-btn popup-modal-btn">Add</button>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </main>
+</body>
+
+</html>
